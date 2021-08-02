@@ -1,0 +1,86 @@
+<h1>Add User</h1>
+
+<form [formGroup]="addUser" (ngSubmit)="collectUser()"class="container">
+  <div class="form-group">
+    <label for="exampleInput">EmpId</label>
+    <input
+      [disabled]="true"
+      type="text"
+      class="form-control"
+      id="exampleInput"
+      formControlName="userid"
+      placeholder="Enter user id"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInput1">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInput1"
+      formControlName="name"
+      placeholder="Enter name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInput2">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInput2"
+      formControlName="email"
+      placeholder="Enter email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInput3">Contact</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInput3"
+      formControlName="contact"
+      placeholder="Enter mobile number"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInput4">Address</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInput4"
+      formControlName="address"
+      placeholder="Enter Address"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInput5">Customer Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInput5"
+      formControlName="customer_name"
+      placeholder="Enter Customer name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInput6">Customer Website</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInput6"
+      formControlName="website"
+      placeholder="Enter website"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInput7">Customer Address</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInput7"
+      formControlName="customer_address"
+      placeholder="Enter customer Address"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
