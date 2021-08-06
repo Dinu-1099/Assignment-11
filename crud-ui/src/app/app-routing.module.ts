@@ -6,21 +6,21 @@ import { UpdateUserComponent } from './update-user/update-user.component';
 
 const routes: Routes = [
   {
-    component:AddUserComponent,
-    path:'add'
+    component: AddUserComponent,
+    path: 'add',
   },
   {
-    component:ListUsersComponent,
-    path:'users'
+    component: ListUsersComponent,
+    path: 'users',
   },
   {
-    component:UpdateUserComponent,
-    path:'update/:'
-  }
+    component: UpdateUserComponent,
+    path: 'update/:',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
